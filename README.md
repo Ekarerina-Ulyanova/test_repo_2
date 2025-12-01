@@ -4,7 +4,7 @@
 
 ## Overview
 
-test_repo_2 is a personal budget management tool that helps users track expenses, set spending limits, and visualize monthly financial summaries. It enables informed financial decisions by offering an intuitive interface to monitor spending, enforce budget constraints, and maintain financial records securely across sessions.
+test_repo_2 is a personal budget management tool designed to help users track expenses, set spending limits, and review monthly financial summaries. It empowers individuals to make informed financial decisions by offering an intuitive, secure, and user-friendly experience for managing personal finances effectively.
 
 ## Table of Contents
 
@@ -15,13 +15,12 @@ test_repo_2 is a personal budget management tool that helps users track expenses
 
 ## Core features
 
-1. **Expense Management**: Allows users to add, view, and remove individual expenses with details such as amount, category, and description. Expenses are stored in a local SQLite database for persistence.
-2. **Budget Tracking**: Enables users to set and manage a budget amount. The application tracks the current budget balance and ensures expenses do not exceed available funds.
-3. **Graphical User Interface**: Provides a user-friendly desktop interface built with Tkinter, allowing users to interact with the budget manager through buttons, entry fields, and a listbox for viewing expenses.
-4. **Data Persistence**: Utilizes SQLite to store budget and expense data locally in a 'budget.db' file, ensuring that information persists between application sessions.
-5. **Monthly Financial Summary**: Displays a summary of all expenses and the total amount spent during the month, helping users review their spending habits through a dedicated view function.
-6. **Budget Validation**: Prevents users from adding expenses that exceed their current budget by validating transaction amounts before recording them.
-7. **Input Error Handling**: Implements error handling for invalid user inputs, such as non-numeric values, and provides user feedback via message boxes to improve usability.
+1. **Expense Management**: Allows users to add, view, and remove individual expenses with details such as amount, category, and description. Expenses are stored in a local SQLite database for persistence and can be managed through a graphical interface.
+2. **Budget Tracking**: Enables users to set and manage a budget amount. The application tracks the current budget balance in real time and updates it when expenses are added or removed, ensuring accurate financial oversight.
+3. **Graphical User Interface**: Provides a user-friendly desktop interface built with Tkinter, allowing users to interact with the budget manager through intuitive elements like buttons, entry fields, and a listbox for viewing and managing expenses.
+4. **Data Persistence**: Utilizes SQLite to store budget and expense data locally in a 'budget.db' file, ensuring that all financial records persist across application sessions and are not lost upon closure.
+5. **Budget Validation**: Prevents users from adding expenses that exceed their current budget by validating transaction amounts before recording them, thus enforcing responsible spending behavior.
+6. **Input Error Handling**: Implements robust error handling for invalid user inputs, such as non-numeric values, and provides clear feedback via message boxes to improve usability and prevent application errors.
 
 ## Installation
 
@@ -47,13 +46,7 @@ cd test_repo_2
 
 ## Citation
 
-If you use this software, please cite it as below.
-
-### APA format:
-
 Ekarerina-Ulyanova (2025). test_repo_2 repository [Computer software]. https://github.com/Ekarerina-Ulyanova/test_repo_2
-
-### BibTeX format:
 
 ```bibtex
 @misc{test_repo_2,
