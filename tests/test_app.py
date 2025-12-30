@@ -1,5 +1,5 @@
 import pytest
-from main import BudgetApp
+from src.main import BudgetApp
 import tkinter as tk
 from tkinter import messagebox
 

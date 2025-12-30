@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from budget_manager import BudgetManager
+from src.budget_manager import BudgetManager
 
 class BudgetApp:
     def __init__(self, root):
