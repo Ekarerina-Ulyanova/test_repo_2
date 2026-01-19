@@ -324,3 +324,4 @@ classDiagram
     initialize_git_platform() --> GitHubAgent : создает для GitHub
     initialize_git_platform() --> GitLabAgent : создает для GitLab
     initialize_git_platform() --> GitverseAgent : создает для Gitverse
+```
