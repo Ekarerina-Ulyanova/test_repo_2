@@ -255,7 +255,7 @@ classDiagram
         +__init__(repository: str, metadata: RepositoryMetadata, args)
     }
 
-    %% Дополнительные классы, упомянутые в run.py
+    %% Дополнительные классы
     class SourceRank {
         +__init__(config_manager: ConfigManager)
         +requirements_presence() bool
@@ -292,7 +292,7 @@ classDiagram
     ModeScheduler --> WorkflowManager : использует
     
     ProtollmHandler --> ModelSettings : использует
-    ProtollmHandler ..|> ModelHandler : реализует
+    ProtollmHandler --|> ModelHandler : реализует
     
     ModelHandlerFactory --> ProtollmHandler : создает
     
@@ -303,25 +303,4 @@ classDiagram
     DocGen --> ProtollmHandler : использует
     DocGen --> ModelHandlerFactory : создает обработчик
     
-    OSA_TreeSitter --> tree_sitter.Parser : использует
-    OSA_TreeSitter --> tree_sitter.Tree : использует
-    OSA_TreeSitter --> tree_sitter.Node : обрабатывает
-    
     DocGen ..> OSA_TreeSitter : анализирует структуру кода
-    generate_docstrings() --> DocGen : использует
-    generate_docstrings() --> OSA_TreeSitter : использует
-    
-    %% Взаимодействия между классами из run.py
-    main() --> ConfigManager : создает
-    main() --> initialize_git_platform() : вызывает
-    main() --> GitAgent : создает через фабрику
-    main() --> WorkflowManager : создает через фабрику
-    main() --> ModeScheduler : создает
-    main() --> generate_docstrings() : вызывает
-    main() --> различные агенты : вызывает (ReadmeAgent, AboutGenerator и т.д.)
-    
-    %% Фабричный метод для Git платформ
-    initialize_git_platform() --> GitHubAgent : создает для GitHub
-    initialize_git_platform() --> GitLabAgent : создает для GitLab
-    initialize_git_platform() --> GitverseAgent : создает для Gitverse
-```
